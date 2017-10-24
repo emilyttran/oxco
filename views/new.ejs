@@ -1,0 +1,10 @@
+<% include partials/header %>
+<h1>Create a new project</h1>
+<form action="/projects" method="POST">
+    <input type="text" name="title" placeholder="Title of project">
+    <input type="text" name="description" placeholder="Description of project">
+    <input type="text" name="img" placeholder="Image url">
+    <button> Create new project </button>
+</form>
+
+<% include partials/footer %>

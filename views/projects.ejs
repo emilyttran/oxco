@@ -1,0 +1,15 @@
+<% include partials/header %>
+<a href="/projects/new"><button>Add new project</button></a>
+<% projects.forEach(function(project){ %>
+<div class="col-md-3 col-sm-6">
+    <div class="thumbnail">
+        <img src="<%=project.img%>">
+        <div class="caption">
+            <h3> <%= project.title %> </h3>
+            <h5> <%= project.name %> </h5>            
+        </div>
+    </div>    
+</div>
+<% }); %>
+
+<% include partials/footer %>
